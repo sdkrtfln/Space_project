@@ -1175,3 +1175,22 @@ footer .container .column3 a {
 .column2 {
     padding: 10px;
 }
+#to-top, #to-bottom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(32, 1, 36);
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    border: 2px solid rgb(31, 0, 25);
+    transition: .2s;
+}
+#to-top:hover {
+    opacity: 0.8;
+    transition: .2s;
+}
+
+#to-top {
+    z-index: 2;
+}
