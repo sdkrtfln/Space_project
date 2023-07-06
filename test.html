@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>приколы с флексом</title>
+</head>
+<body>
+    <div class="big-reactangle">
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="small-reactangle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .big-reactangle {
+            width: 1000px;
+            height: 1000px;
+            border: 10px solid rgb(0, 0, 0);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+             /* очень редко использовать */
+        }
+        .small-reactangle {
+            width: 30%;
+            height: 30%;
+            background-color: rgb(144, 154, 247);
+            border: 2px solid black;
+            display: flex;
+        }
+        .small-reactangle:nth-child(1) {
+            border: 2px solid rgb(243, 0, 0);
+        }
+        .small-reactangle:nth-child(2) {
+            justify-content: space-between;
+        }
+        .small-reactangle:nth-child(3) {
+           flex-direction: column;
+        }
+        .small-reactangle:nth-child(4) {
+           flex-direction: column;
+           justify-content: space-between;
+        }
+        .small-reactangle:nth-child(5) {
+           justify-content: space-around;
+           align-items: center;
+        }
+        .small-reactangle:nth-child(6) {
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+        }
+        .small-reactangle:nth-child(6) .circle:nth-child(2) {
+            align-self: flex-end;
+            justify-self: center;
+        }
+        .small-reactangle:nth-child(7) {
+           justify-content: space-between;
+           align-content: space-between;
+           flex-wrap: wrap;
+        }
+        .small-reactangle:nth-child(6) .circle:nth-child(5) {
+            align-self: flex-start;
+        }
+        .circle {
+            border-radius: 50%;
+            width: 27%;
+            height: 27%;
+            background-color: rgb(0, 0, 0);
+            justify-content: center
+        }
+
+    </style>
+</body>
+</html>
